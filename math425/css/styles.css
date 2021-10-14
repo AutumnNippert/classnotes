@@ -34,6 +34,17 @@ body {
     background-color: #c4eecc;
 }
 
+#calcBook {
+    padding: 1%;
+    width: 98%;
+    height: 825px;
+}
+
+#exam1Review {
+    width: 60%;
+    height: 775px;
+}
+
 .homework {
     float: left;
     width: 48%;
