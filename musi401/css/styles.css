@@ -34,6 +34,12 @@ body {
     background-color: #c4eecc;
 }
 
+#musi401Notes {
+    padding: 1%;
+    height: 825px;
+    width: 98%;
+}
+
 footer {
     margin: 0;
     padding: 2;
