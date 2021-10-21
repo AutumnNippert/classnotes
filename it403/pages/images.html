@@ -4,6 +4,32 @@
 <head>
     <link rel="stylesheet" href="../css/styles.css">
     <meta charset="utf-8" />
+    <style>
+        .imageNotes {
+            float: left;
+            padding: 1%;
+            width: 48%;
+        }
+
+        #imagesPDF {
+            float: right;
+            padding: 1%;
+            width: 48%;
+            height: 700px;
+        }
+
+        #ipPDF {
+            padding: 1%;
+            width: 100%;
+            height: 800px;
+            vertical-align: middle;
+        }
+
+        .imageNotes,
+        #imagesPDF {
+            display: inline;
+        }
+    </style>
     <title>CSS</title>
 </head>
 
@@ -68,7 +94,12 @@
         <a href="http://itcourses.cs.unh.edu/samples/images.html">School Teaching Images</a>
     </div>
 
-    <embed id="imagesPDF" src="../resources/Images.pdf" />
+    <object id="imagesPDF" data="../resources/Images.pdf" type="application/pdf">
+        <embed id="imagesPDF" src="../resources/Images.pdf"/> 
+    </object>
+         
+    
+    <!-- <embed id="imagesPDF" src="../resources/Images.pdf" /> -->
 
 
 </body>

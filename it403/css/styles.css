@@ -56,30 +56,6 @@ footer a {
     color: #111;
 }
 
-.imageNotes {
-    float: left;
-    padding: 1%;
-    width: 40%;
-}
-
-#imagesPDF{
-    float: right;
-    padding: 1%;
-    width: 40%;
-    height: 800px;
-}
-
-#ipPDF{
-    padding: 1%;
-    width: 80%;
-    height: 800px;
-    vertical-align: middle;
-}
-
-.imageNotes, #imagesPDF {
-    display:inline;
-}
-
 /*404*/
 
 .pageNotFound {
