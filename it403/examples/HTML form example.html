@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <title>A Document Demonstrating HTML Forms</title>
+      <meta charset="utf-8">
+      <style>
+        form {
+          border: 2px solid #009966;
+          padding: 8px;
+        }
+      </style>
+   </head>
+   <body>
+      <h1>Simple form</h1>
+      <form id="simple" method="get" action="http://amgilder.wcit.cs.unh.edu/cgi-bin/test403">
+         <p><label for="uname">Username:</label> <input name="uname" id="uname" type="text"></p>
+                   
+         <p><input type="submit" value="Place order"></p>
+      </form>
+
+      <h1>Order form</h1>
+      <form id="order1" method="post" action="http://amgilder.wcit.cs.unh.edu/cgi-bin/test403">
+         <p><label for="uname">Username:</label> <input name="uname" id="uname" type="text">
+            <label for="pword">Password:</label> <input name="pword" id="pword" type="password"></p>
+         
+         <fieldset>
+            <legend>Credit card info</legend>
+            <fieldset>
+               <input name="ctype" id="ctypev" type="radio" value="visa" checked="checked">
+               <label for="ctypev">Visa</label><br>
+               <input name="ctype" id="ctypem" type="radio" value="mastercard">
+               <label for="ctypem">Mastercard</label><br>
+               <input name="ctype" id="ctypea" type="radio" value="amex">
+               <label for="ctypea">American Express</label><br>
+               <input name="ctype" id="ctyped" type="radio" value="discover">
+               <label for="ctyped">Discover</label>
+            </fieldset>
+         
+            <br>
+            
+            <label for="cardno">Credit card number:</label>
+            <input name="cardno" id="cardno"> 
+            <label for="cardno">(No spaces or dashes please!)</label>
+         </fieldset>
+                  
+         <p><input name="giftwrap" id="giftwrap" type="checkbox">
+            <label for="giftwrap">Gift wrapped</label><br>
+            <input name="giftrcpt" id="giftrcpt" type="checkbox">
+            <label for="giftrcpt">Gift receipt</label><br></p>
+
+         <p><label for="size">Size:</label>
+                  <select name="size" id="size">
+                     <option selected="selected">XX-Small</option>
+                     <option>X-Small</option>
+                     <option>Small</option>
+                     <option>Medium</option>
+                     <option>Large</option>
+                     <option>X-Large</option>
+                     <option>XX-Large</option>
+                  </select></p>
+ 
+          <p><label for="color">Color:</label>
+                  <select name="color" id="color" size="4">
+                     <option>Red</option>
+                     <option selected="selected">Black</option>
+                     <option>White</option>
+                     <option>Yellow</option>
+                     <option>Green</option>
+                     <option>Blue</option>
+                     <option>Gray</option>
+                  </select></p>
+                  
+         <p>Special directions:<br>
+            <textarea name="special" rows="3" cols="50"></textarea></p>
+           
+         <p>Shipping address:<br>
+            <label for="shipname">Name:</label> <input name="shipname" id="shipname" size="60"><br>
+            <label for="shipstreet">Street:</label> <input name="shipstreet" id="shipstreet" size="60"><br>
+            <label for="shipcity">City:</label>&nbsp;&nbsp;&nbsp; <input name="shipcity" id="shipcity">
+            <label for="shipstate">State:</label> <input name="shipstate" id="shipstate" size="2">
+            <label for="shipzip">Zip code:</label> <input name="shipzip" id="shipzip" size="10">
+         </p>
+          
+         <p><input type="submit" value="Place order">
+            <input type="hidden" name="formtype" value="Order"></p>
+ 
+      </form>
+
+   
+
+
+</body></html>

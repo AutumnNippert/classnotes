@@ -4,6 +4,11 @@
 <head>
     <link rel="stylesheet" href="../css/styles.css">
     <meta charset="utf-8" />
+    <style>
+        h1 {
+            background-color: #bcf1f1;
+        }
+    </style>
     <title>Forms</title>
 </head>
 
@@ -15,6 +20,7 @@
                 <li><a href="../it403Main.html">Home</a></li>
                 <li><a href="html.html">HTML</a></li>
                 <li><a href="htmlTables.html">HTML-Tables</a></li>
+                <li><a href="forms.html">HTML-Forms</a></li>
                 <li><a href="images.html">Images</a></li>
                 <li><a href="ethernet.html">Ethernet</a></li>
                 <li><a href="routing.html">Routing</a></li>
@@ -24,8 +30,129 @@
         </nav>
     </header>
 
-    <embed id="ipPDF" src="../resources/HTML Tables.pdf">
-    
+    <h1>Forms</h1>
+    <h2>Filling out information</h2>
+    <h2>Things on a form:</h2>
+    <ul>
+        <li>Textbox</li>
+        <li>Password Field</li>
+        <li>Submit Button</li>
+        <li>Radio Buttons </li>
+        <li>Checkbox</li>
+        <li>Sliders</li>
+        <li>Dropdown/select</li>
+        <li>Text Area</li>
+    </ul>
+    <h2>For all of these, there are only 3 different elements that you need to know</h2>
+    <ul>
+        <li>form</li>
+        <li>input</li>
+        <li>textarea</li>
+    </ul>
+    <h1>Form</h1>
+    <p>
+        Method: The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post")<br/>
+        Action: URL to the forms processing
+    </p>
+    <h2>Example Form</h2>
+    <form id="exForm" method="post" action="../formProcessor.php">
+        <label for="username">Username</label>
+        <input name="username" type="text"/>
+        <br/>
+        <label for="password">Password&nbsp;</label>
+        <input name="password" type="password"/>
+        <br/>
+        <input name="submitButton" type="submit" value="Submit"/>
+    </form>
+
+    <h1>Input</h1>
+    <p1>possible values for type attribute</p1>
+    <ul>
+        <li>text</li>
+        <li>password (just hides the characters / not really secure)</li>
+        <li>submit</li>
+    </ul>
+
+    <h2>Textbox</h2>
+    <label for="textbox1">Texbox</label>
+    <input name="textbox1" type="text" />
+
+    <h2>Password</h2>
+    <label for="password1">Password</label>
+    <input name="password1" type="password" />
+
+    <h2>Submit</h2>
+    <input name="submit1" type="submit" value="a submit button" />
+
+    <h2>Checkbox</h2>
+    <p>Optional parameter checked="checked"</p>
+    <input name="checkbox1" type="checkbox" value="potato" checked="checked" />
+    <input name="checkbox2" type="checkbox" value="egg" />
+
+    <h2>Radio Buttons</h2>
+    <p>
+        Give all the same name but different values<br />
+        Optional parameter checked="checked"<br />
+        Always have at least 1 checked by default
+    </p>
+    <label for="radioButtons1">pizza</label>
+    <input name="radioButtons1" type="radio" value="pizza" checked="checked" />
+    <label for="radioButtons1">pasta</label>
+    <input name="radioButtons1" type="radio" value="pasta" />
+    <label for="radioButtons1">poatao</label>
+    <input name="radioButtons1" type="radio" value="poatao" />
+
+    <h2>Slider</h2>
+    <p>Not that easy</p>
+
+    <h2>Hidden</h2>
+    <p>To send server data without knowing</p>
+    <input type="hidden" value="hiddenValue"/>
+
+    <h2>Dropdown/select</h2>
+    <select name="dropdown">
+        <option value="Ungabunga">Ungabunga</option>
+        <option selected="selected" value="poatao">Poatao</option>
+    </select>
+
+    <h2>scroll select</h2>
+    <p>Not gonna lie, this is kind of useless and ugly</p>
+    <select name="scrollingSelector" size="5">
+        <option>Test1 ungabunga</option>
+        <option selected="selected">Test2</option>
+        <option>Test3</option>
+        <option>Test4</option>
+        <option>Test5 This makes the box very long i like a lot</option>
+        <option>Test6</option>
+        <option>Test7</option>
+        <option>Test8</option>
+        <option>Test9</option>
+    </select>
+
+    <h1>TextArea</h1>
+    <p>Name is important for a text area</p>
+    <textarea name="textarea1" rows="10" cols="40">
+        This is a text area
+    </textarea>
+    <br />
+    <h1>fieldset</h1>
+    <fieldset>
+        <legend>Favorite Food</legend>
+        <input name="radioButtons2" id="pizza" type="radio" value="pizza" checked="checked" />
+        <label for="pizza">pizza</label>
+        <br/>
+        <input name="radioButtons2" id="pasta" type="radio" value="pasta" />
+        <label for="pasta">pasta</label>
+        <br/>
+        <input name="radioButtons2" id="poatao" type="radio" value="poatao" />
+        <label for="poatao">poatao</label>
+        <br/>
+    </fieldset>
+    <a href="../examples/HTML form example.html">Example for forms</a>
+    <br/>
+
+    <embed class="pdf" src="../resources/HTML Forms.pdf"/>
+
 </body>
 
 
